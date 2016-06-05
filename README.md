@@ -10,6 +10,7 @@ Full Stack Javascript Development with [Node.js](https://nodejs.org/en/)
 - [Writing small & reusable Modules](http://substack.net/how_I_write_modules)
 - [Awesome NPM](https://github.com/sindresorhus/awesome-npm)
 - [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs)
+- [Awesome TypeScript](https://github.com/ellerbrock/awesome-typescript)
 - [The Art of Node](https://github.com/maxogden/art-of-node#modules)
 - [Node School](http://nodeschool.io/)
 - [NPM Developer Guide](https://docs.npmjs.com/misc/developers)
@@ -19,6 +20,8 @@ Full Stack Javascript Development with [Node.js](https://nodejs.org/en/)
 - [10 Cool Things You Probably didn't realize npm could do](http://blog.izs.me/post/1675072029/10-cool-things-you-probably-didnt-realize-npm-could-do)
 - [Semantic Versioning](http://semver.org/)
 - [Semantic Versioning & Node.js](https://nodesource.com/blog/semver-a-primer/)
+- [You Don't Know Node.js](https://github.com/azat-co/you-dont-know-node) - Quick Intro to Core Features
+- [Node.js for Developers](https://github.com/ellerbrock/node.js-for-developers) - Guide for Node.js Developers
 
 # Modules
 
@@ -68,6 +71,23 @@ console.log('Name: ' + pkg().name + ' Version: ' + pkg().version);
 
 # Applications
 
+## Frameworks
+
+- [Node.js Framework Overview](http://nodeframework.com/) - Hand-picked registry of Node.js frameworks.
+- [Koa](http://koajs.com) - A new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs.
+- [Express](http://expressjs.com) - A minimal and flexible web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
+- [Feathers](http://feathersjs.com) - A minimal and flexible microservice framework built in the spirit of Express.
+- [Hapi](http://hapijs.com) - A rich framework for building applications and services.
+- [LoopBack](http://loopback.io) - Powerful framework for creating REST APIs and easily connecting to backend data sources.
+- [Meteor](https://www.meteor.com) - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. _(You might like [awesome-meteor](https://github.com/Urigo/awesome-meteor))_
+- [SailsJS](http://sailsjs.org) - An MVC web framework with a modern twist, supporting WebSockets, streams, and a data-driven API.
+- [Restify](http://restify.com) - A node framework built specifically to enable you to build correct REST web services.
+- [Interfake](https://github.com/basicallydan/interfake) - Rapid prototyping framework for making mock HTTP APIs, with a Node.js, command-line and HTTP interface.
+- [Derby](https://github.com/derbyjs/derby) - MVC framework, making it easy to write realtime, collaborative applications that run in both Node.js and browsers.
+- [Restberry](http://restberry.com) - Framework for setting up RESTful JSON APIs, applied to your database models without needing to write any code.
+- [Catberry](http://catberry.org) - Framework with Flux architecture, isomorphic web-components, and progressive rendering.
+- [ThinkJS](https://thinkjs.org) - Framework with ES2015+ support, WebSockets, REST API.
+
 ## Flat File CMS
 
 - [Hexo](https://hexo.io/) - A fast, simple & powerful blog framework
@@ -84,6 +104,10 @@ console.log('Name: ' + pkg().name + ' Version: ' + pkg().version);
 ## official Node.js
 
 - `docker pull node` - [official Node.js](https://hub.docker.com/_/node/)
+
+## NodeOs
+
+- `docker pull nodeos/nodeos` - [official NodeOS](https://hub.docker.com/r/nodeos/nodeos/)
 
 ## Flat File CMS
 
@@ -102,7 +126,7 @@ console.log('Name: ' + pkg().name + ' Version: ' + pkg().version);
 
 - [Node.js Security Checklist](https://blog.risingstack.com/node-js-security-checklist/)
 - [Node.js Security Tips](https://blog.risingstack.com/node-js-security-tips/)
-- [nsp](https://nodesecurity.io/opensource) - command line interface to the Node Security Platform
+- [nsp](https://nodesecurity.io/opensource) - Command line interface to the Node Security Platform.
 - [http authentication](https://github.com/request/request#http-authentication)
 
 # Travis CI
@@ -126,24 +150,19 @@ brew link --overwrite node4-lts
 - [Downgrade Node.js to a Specific Version Using Homebrew](http://www.wiredatom.com/blog/2015/03/30/downgrade-node-js-to-a-specific-version-using-homebrew/)
 - [Switch Node.js versions with the Node Version Manager (nvm)](http://michael-kuehnel.de/node.js/2015/09/08/using-vm-to-switch-node-versions.html)
 
-### Contact / Social Media
+## Contact / Social Media
 
-*Get the latest News about Web Development, Open Source, Tooling, Server & Security*
+_Get the latest News about Web Development, Open Source, Tooling, Server & Security_
 
-[![Twitter](https://github.frapsoft.com/social/twitter.png)](https://twitter.com/frapsoft/)
-[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/frapsoft/)
-[![Google+](https://github.frapsoft.com/social/google-plus.png)](https://plus.google.com/116540931335841862774)
-[![Gitter](https://github.frapsoft.com/social/gitter.png)](https://gitter.im/frapsoft/frapsoft/)
-[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/ellerbrock/)
+[![Twitter](https://github.frapsoft.com/social/twitter.png)](https://twitter.com/frapsoft/) [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/frapsoft/) [![Google+](https://github.frapsoft.com/social/google-plus.png)](https://plus.google.com/116540931335841862774) [![Gitter](https://github.frapsoft.com/social/gitter.png)](https://gitter.im/frapsoft/frapsoft/) [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/ellerbrock/)
 
-### Development by 
+## Development by
 
-Developer / Author: [Maik Ellerbrock](https://github.com/ellerbrock/)  
+Developer / Author: [Maik Ellerbrock](https://github.com/ellerbrock/)<br>
 Company: [Frapsoft](https://github.com/frapsoft/)
 
+## License
 
-### License 
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)<br>
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
-
-This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ellerbrock/" property="cc:attributionName" rel="cc:attributionURL">Maik Ellerbrock</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+This work by [Maik Ellerbrock](https://github.com/ellerbrock/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
