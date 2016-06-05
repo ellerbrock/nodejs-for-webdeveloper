@@ -8,17 +8,30 @@ Full Stack Javascript Development with [Node.js](https://nodejs.org/en/)
 
 - [Unix Philosophy and Node.js](http://blog.izs.me/post/48281998870/unix-philosophy-and-nodejs)
 - [Writing small & reusable Modules](http://substack.net/how_I_write_modules)
-- [Semantic Versioning & Node.js](https://nodesource.com/blog/semver-a-primer/)
+- [Awesome NPM](https://github.com/sindresorhus/awesome-npm)
+- [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs)
 - [The Art of Node](https://github.com/maxogden/art-of-node#modules)
 - [Node School](http://nodeschool.io/)
+- [NPM Developer Guide](https://docs.npmjs.com/misc/developers)
+- [Common.js Module Specs](http://www.commonjs.org/specs/modules/1.0/)
+- [Getting Started with Node and NPM](https://github.com/Microsoft/nodejs-guidelines/blob/master/getting-started.md)
+- [Interactive Guide for exploring package.json](http://browsenpm.org/package.json)
+- [10 Cool Things You Probably didn't realize npm could do](http://blog.izs.me/post/1675072029/10-cool-things-you-probably-didnt-realize-npm-could-do)
+- [Semantic Versioning](http://semver.org/)
+- [Semantic Versioning & Node.js](https://nodesource.com/blog/semver-a-primer/)
 
 # Modules
 
 - [Publishing NPM Packages for Developers](https://github.com/ellerbrock/tutorial-publishing-npm-packages)
+- [Choosing a licence for your Open Source Project](https://github.com/ellerbrock/tutorial-choosing-open-source-licence)
 - [Node.js Modules Documentation](https://nodejs.org/api/modules.html)
 - [Node.js Module Pattern - simple examples](https://darrenderidder.github.io/talks/ModulePatterns/)
 - [Understanding module.exports and exports in Node.js](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 - [An overview of Node: Modules and npm](http://book.mixu.net/node/ch8.html)
+- [Creating and Publishing a Node.js Module](https://quickleft.com/blog/creating-and-publishing-a-node-js-module/)
+- [Creating Node.js modules](https://docs.npmjs.com/getting-started/creating-node-modules)
+- [How to write Node.js Modules](http://www.hacksparrow.com/how-to-write-node-js-modules.html)
+- [Modules 1.1 Wikipedia](http://wiki.commonjs.org/wiki/Modules/1.1)
 
 ## Simple Module Example
 
