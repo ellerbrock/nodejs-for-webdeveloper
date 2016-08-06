@@ -1,6 +1,6 @@
 ![logo](https://github.frapsoft.com/top/nodejs-logo.png)
 
-# Node.js for Developers [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
+# Node.js for Developers [![Build Status](https://travis-ci.org/ellerbrock/nodejs-for-developers.svg?branch=master)](https://travis-ci.org/ellerbrock/nodejs-for-developers) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
 
 Full Stack Javascript Development with [Node.js](https://nodejs.org/en/)
 
@@ -115,7 +115,7 @@ console.log('Name: ' + pkg().name + ' Version: ' + pkg().version);
 
 ## Blog
 
-- `docker pull ghost` - [official ghost](https://https://hub.docker.com/_/ghost/.docker.com/r/gugu/raneto/)
+- `docker pull ghost` - [official ghost](https://hub.docker.com/_/ghost/)
 
 ## NoSQL
 
@@ -150,19 +150,20 @@ brew link --overwrite node4-lts
 - [Downgrade Node.js to a Specific Version Using Homebrew](http://www.wiredatom.com/blog/2015/03/30/downgrade-node-js-to-a-specific-version-using-homebrew/)
 - [Switch Node.js versions with the Node Version Manager (nvm)](http://michael-kuehnel.de/node.js/2015/09/08/using-vm-to-switch-node-versions.html)
 
-## Contact / Social Media
 
-_Get the latest News about Web Development, Open Source, Tooling, Server & Security_
+### Contact / Social Media
 
-[![Twitter](https://github.frapsoft.com/social/twitter.png)](https://twitter.com/frapsoft/) [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/frapsoft/) [![Google+](https://github.frapsoft.com/social/google-plus.png)](https://plus.google.com/116540931335841862774) [![Gitter](https://github.frapsoft.com/social/gitter.png)](https://gitter.im/frapsoft/frapsoft/) [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/ellerbrock/)
+*Get the latest News about Web Development, Open Source, Tooling, Server & Security*
 
-## Development by
+[![Twitter](https://github.frapsoft.com/social/twitter.png)](https://twitter.com/frapsoft/)[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/frapsoft/)[![Google+](https://github.frapsoft.com/social/google-plus.png)](https://plus.google.com/116540931335841862774)[![Gitter](https://github.frapsoft.com/social/gitter.png)](https://gitter.im/frapsoft/frapsoft/)[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/ellerbrock/)
 
-Developer / Author: [Maik Ellerbrock](https://github.com/ellerbrock/)<br>
+### Development by
+
+Developer / Author: [Maik Ellerbrock](https://github.com/ellerbrock/)  
 Company: [Frapsoft](https://github.com/frapsoft/)
 
-## License
+### License 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)<br>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
 
-This work by [Maik Ellerbrock](https://github.com/ellerbrock/) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ellerbrock/" property="cc:attributionName" rel="cc:attributionURL">Maik Ellerbrock</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
