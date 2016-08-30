@@ -1,6 +1,6 @@
 ![logo](https://github.frapsoft.com/top/nodejs-logo.png)
 
-# Node.js for Developers [![Build Status](https://travis-ci.org/ellerbrock/nodejs-for-developers.svg?branch=master)](https://travis-ci.org/ellerbrock/nodejs-for-developers) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
+# Node.js for Developers [![Build Status](https://travis-ci.org/ellerbrock/atom-for-webdeveloper.svg?branch=master)](https://travis-ci.org/ellerbrock/atom-for-webdeveloper) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/)
 
 Full Stack Javascript Development with [Node.js](https://nodejs.org/en/)
 
