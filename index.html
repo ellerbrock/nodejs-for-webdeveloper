@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Node.js Tutorial for Web Developers by ellerbrock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Node.js Tutorial for Web Developers</h1>
+      <h2 class="project-tagline">Node.js for Developers</h2>
+      <a href="https://github.com/ellerbrock/nodejs-for-webdeveloper" class="btn">View on GitHub</a>
+      <a href="https://github.com/ellerbrock/nodejs-for-webdeveloper/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ellerbrock/nodejs-for-webdeveloper/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><img src="https://github.frapsoft.com/top/nodejs-logo.png" alt="logo"></p>
+
+<h1>
+<a id="nodejs-for-developers---" class="anchor" href="#nodejs-for-developers---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node.js for Developers <a href="https://travis-ci.org/ellerbrock/nodejs-for-webdeveloper"><img src="https://travis-ci.org/ellerbrock/nodejs-for-webdeveloper.svg?branch=master" alt="Build Status"></a> <a href="https://github.com/ellerbrock/open-source-badge/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102" alt="Open Source Love"></a> <a href="https://gitter.im/frapsoft/frapsoft/"><img src="https://badges.gitter.im/frapsoft/frapsoft.svg" alt="Gitter Chat"></a>
+</h1>
+
+<p>Full Stack Javascript Development with <a href="https://nodejs.org/en/">Node.js</a></p>
+
+<h2>
+<a id="recommended-reading" class="anchor" href="#recommended-reading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recommended Reading</h2>
+
+<ul>
+<li>  <a href="http://blog.izs.me/post/48281998870/unix-philosophy-and-nodejs">Unix Philosophy and Node.js</a>
+</li>
+<li>  <a href="http://substack.net/how_I_write_modules">Writing small &amp; reusable Modules</a>
+</li>
+<li>  <a href="https://github.com/sindresorhus/awesome-npm">Awesome NPM</a>
+</li>
+<li>  <a href="https://github.com/sindresorhus/awesome-nodejs">Awesome Node.js</a>
+</li>
+<li>  <a href="https://github.com/ellerbrock/awesome-typescript">Awesome TypeScript</a>
+</li>
+<li>  <a href="https://github.com/maxogden/art-of-node#modules">The Art of Node</a>
+</li>
+<li>  <a href="http://nodeschool.io/">Node School</a>
+</li>
+<li>  <a href="https://docs.npmjs.com/misc/developers">NPM Developer Guide</a>
+</li>
+<li>  <a href="http://www.commonjs.org/specs/modules/1.0/">Common.js Module Specs</a>
+</li>
+<li>  <a href="https://github.com/Microsoft/nodejs-guidelines/blob/master/getting-started.md">Getting Started with Node and NPM</a>
+</li>
+<li>  <a href="http://browsenpm.org/package.json">Interactive Guide for exploring package.json</a>
+</li>
+<li>  <a href="http://blog.izs.me/post/1675072029/10-cool-things-you-probably-didnt-realize-npm-could-do">10 Cool Things You Probably didn't realize npm could do</a>
+</li>
+<li>  <a href="http://semver.org/">Semantic Versioning</a>
+</li>
+<li>  <a href="https://nodesource.com/blog/semver-a-primer/">Semantic Versioning &amp; Node.js</a>
+</li>
+<li>  <a href="https://github.com/azat-co/you-dont-know-node">You Don't Know Node.js</a> - Quick Intro to Core Features</li>
+<li>  <a href="https://github.com/ellerbrock/node.js-for-developers">Node.js for Developers</a> - Guide for Node.js Developers</li>
+</ul>
+
+<h2>
+<a id="modules" class="anchor" href="#modules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modules</h2>
+
+<ul>
+<li>  <a href="https://github.com/ellerbrock/tutorial-publishing-npm-packages">Publishing NPM Packages for Developers</a>
+</li>
+<li>  <a href="https://github.com/ellerbrock/tutorial-choosing-open-source-licence">Choosing a licence for your Open Source Project</a>
+</li>
+<li>  <a href="https://nodejs.org/api/modules.html">Node.js Modules Documentation</a>
+</li>
+<li>  <a href="https://darrenderidder.github.io/talks/ModulePatterns/">Node.js Module Pattern - simple examples</a>
+</li>
+<li>  <a href="https://www.sitepoint.com/understanding-module-exports-exports-node-js/">Understanding module.exports and exports in Node.js</a>
+</li>
+<li>  <a href="http://book.mixu.net/node/ch8.html">An overview of Node: Modules and npm</a>
+</li>
+<li>  <a href="https://quickleft.com/blog/creating-and-publishing-a-node-js-module/">Creating and Publishing a Node.js Module</a>
+</li>
+<li>  <a href="https://docs.npmjs.com/getting-started/creating-node-modules">Creating Node.js modules</a>
+</li>
+<li>  <a href="http://www.hacksparrow.com/how-to-write-node-js-modules.html">How to write Node.js Modules</a>
+</li>
+<li>  <a href="http://wiki.commonjs.org/wiki/Modules/1.1">Modules 1.1 Wikipedia</a>
+</li>
+</ul>
+
+<h4>
+<a id="simple-module-example" class="anchor" href="#simple-module-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Simple Module Example</h4>
+
+<p>index.js:</p>
+
+<pre><code>const pkg = require("./package.json");
+
+module.exports = () =&gt; pkg;
+</code></pre>
+
+<p>run.js:</p>
+
+<pre><code>const pkg = require("./index");
+
+console.log('Name: ' + pkg().name + ' Version: ' + pkg().version);
+</code></pre>
+
+<h2>
+<a id="asynchronous-javascript" class="anchor" href="#asynchronous-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Asynchronous Javascript</h2>
+
+<h4>
+<a id="promises" class="anchor" href="#promises" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Promises</h4>
+
+<ul>
+<li>  <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">MDN Promises</a>
+</li>
+<li>  <a href="https://strongloop.com/strongblog/promises-in-node-js-with-q-an-alternative-to-callbacks/">Promises in Node.js with Q – An Alternative to Callbacks</a>
+</li>
+<li>  <a href="https://davidwalsh.name/promises">JavaScript Promise API</a>
+</li>
+<li>  <a href="https://github.com/wbinnssmith/awesome-promises">Awesome Promises</a>
+</li>
+<li>  <a href="http://bluebirdjs.com/docs/getting-started.html">Bluebird.js</a>
+</li>
+</ul>
+
+<h4>
+<a id="callbacks" class="anchor" href="#callbacks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Callbacks</h4>
+
+<ul>
+<li>  <a href="https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks">Callbacks MDN</a>
+</li>
+<li>  <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&amp;%20performance/README.md#you-dont-know-js-async--performance">You Don't Know JS: Async &amp; Performance</a>
+</li>
+</ul>
+
+<h2>
+<a id="frameworks" class="anchor" href="#frameworks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Frameworks</h2>
+
+<ul>
+<li>  <a href="http://nodeframework.com/">Node.js Framework Overview</a> - Hand-picked registry of Node.js frameworks.</li>
+<li>  <a href="http://koajs.com">Koa</a> - A new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs.</li>
+<li>  <a href="http://expressjs.com">Express</a> - A minimal and flexible web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.</li>
+<li>  <a href="http://feathersjs.com">Feathers</a> - A minimal and flexible microservice framework built in the spirit of Express.</li>
+<li>  <a href="http://hapijs.com">Hapi</a> - A rich framework for building applications and services.</li>
+<li>  <a href="http://loopback.io">LoopBack</a> - Powerful framework for creating REST APIs and easily connecting to backend data sources.</li>
+<li>  <a href="https://www.meteor.com">Meteor</a> - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. <em>(You might like <a href="https://github.com/Urigo/awesome-meteor">awesome-meteor</a>)</em>
+</li>
+<li>  <a href="http://sailsjs.org">SailsJS</a> - An MVC web framework with a modern twist, supporting WebSockets, streams, and a data-driven API.</li>
+<li>  <a href="http://restify.com">Restify</a> - A node framework built specifically to enable you to build correct REST web services.</li>
+<li>  <a href="https://github.com/basicallydan/interfake">Interfake</a> - Rapid prototyping framework for making mock HTTP APIs, with a Node.js, command-line and HTTP interface.</li>
+<li>  <a href="https://github.com/derbyjs/derby">Derby</a> - MVC framework, making it easy to write realtime, collaborative applications that run in both Node.js and browsers.</li>
+<li>  <a href="http://restberry.com">Restberry</a> - Framework for setting up RESTful JSON APIs, applied to your database models without needing to write any code.</li>
+<li>  <a href="http://catberry.org">Catberry</a> - Framework with Flux architecture, isomorphic web-components, and progressive rendering.</li>
+<li>  <a href="https://thinkjs.org">ThinkJS</a> - Framework with ES2015+ support, WebSockets, REST API.</li>
+</ul>
+
+<h2>
+<a id="flat-file-cms" class="anchor" href="#flat-file-cms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flat File CMS</h2>
+
+<ul>
+<li>  <a href="https://hexo.io/">Hexo</a> - A fast, simple &amp; powerful blog framework</li>
+<li>  <a href="http://raneto.com/">Raneto</a> - Markdown powered Knowledgebase for Nodejs</li>
+<li>  <a href="http://www.metalsmith.io/">MetalSmith</a> - An extremely simple, pluggable static site generator.</li>
+<li>  <a href="http://wintersmith.io/">WinterSmith</a> - Flexible, minimalistic, multi-platform static site generator built on top of node.js.</li>
+</ul>
+
+<h2>
+<a id="blog-systems" class="anchor" href="#blog-systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blog Systems</h2>
+
+<ul>
+<li>  <a href="https://ghost.org/">Ghost</a> - Open Source Blogging Platform.</li>
+</ul>
+
+<h2>
+<a id="debugging" class="anchor" href="#debugging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debugging</h2>
+
+<ul>
+<li>  <a href="https://github.com/kiddkai/atom-node-debugger">atom-node-debugger</a> - Debugger for Atom</li>
+<li>  <a href="https://github.com/s-a/iron-node">iron-node</a> - Debug your Code with Chrome Developer Tools.</li>
+<li>  <a href="https://github.com/node-inspector/node-inspector">node-inspector</a> - Debugger based on Blink Developer Tools</li>
+<li>  <a href="https://nodejs.org/api/debugger.html">node</a> - Node's build in Debugger Utility</li>
+<li>  <a href="http://www.vorlonjs.com/">Vorlon.js</a> - Remotely debugging and testing your JavaScript</li>
+</ul>
+
+<h4>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples:</h4>
+
+<p><em>node-inspector</em></p>
+
+<p><code>npm install -g node-inspector</code>  - install global<br>
+<code>node-debug --debug-brk index.js</code> - starts debugging and stop in first line<br>
+<code>debugger</code> - inside the script write debuggger to set a breakpoint. also its possible inside the debugger window to set breakpoints by clicking in the line.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>  <a href="https://github.com/alanshaw/david">david</a> - Node.js module that tells you when your package npm dependencies are out of date.</li>
+</ul>
+
+<h2>
+<a id="time-safer" class="anchor" href="#time-safer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Time Safer</h2>
+
+<ul>
+<li>  <a href="https://github.com/tapio/live-server">live-server</a> - A simple development http server with live reload capability.</li>
+</ul>
+
+<h2>
+<a id="security" class="anchor" href="#security" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Security</h2>
+
+<ul>
+<li>  <a href="https://blog.risingstack.com/node-hero-node-js-security-tutorial/">Node.js Security Tutorial</a> - Howto defend your applications against the most common attack vectors.</li>
+<li>  <a href="https://blog.risingstack.com/node-js-security-checklist/">Node.js Security Checklist</a>
+</li>
+<li>  <a href="https://blog.risingstack.com/node-js-security-tips/">Node.js Security Tips</a>
+</li>
+<li>  <a href="https://nodesecurity.io/opensource">nsp</a> - Command line interface to the Node Security Platform.</li>
+<li>  <a href="https://github.com/request/request#http-authentication">http authentication</a>
+</li>
+</ul>
+
+<h2>
+<a id="language-support" class="anchor" href="#language-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Language Support</h2>
+
+<ul>
+<li>  <a href="https://nodejs.org/en/docs/es6/">ES6 Support</a> - Node ECMAScript 2015 (ES6) Support and beyond</li>
+<li>  <a href="https://nodejs.org/en/download/current/">Node Releases</a> - Download Site for the different Node Versions</li>
+<li>  <a href="https://babeljs.io/docs/setup/#installation">Node with Babel</a> - How to use Babel with Node<br>
+</li>
+<li>  <a href="http://node.green/">node.green</a> - Lists of the current ES2015 JS Support for the different Note Versions</li>
+</ul>
+
+<h2>
+<a id="travis-ci" class="anchor" href="#travis-ci" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Travis CI</h2>
+
+<ul>
+<li>  <a href="https://docs.travis-ci.com/user/languages/javascript-with-nodejs">Building a Node.js project</a>
+</li>
+<li>  <a href="http://yaml.travis-ci.org/">validate your .travis.yaml</a>
+</li>
+</ul>
+
+<h2>
+<a id="semantic-version-examples" class="anchor" href="#semantic-version-examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Semantic Version Examples</h2>
+
+<ul>
+<li>  ~1.2.3 installs all the patches (&gt;=1.2.3 &lt;1.3.0)</li>
+<li>  ^1.5.1 installs patch and minor versions (&gt;=1.5.1 &lt;2.0.0)</li>
+</ul>
+
+<h2>
+<a id="docker-images" class="anchor" href="#docker-images" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Docker Images</h2>
+
+<h4>
+<a id="official-nodejs" class="anchor" href="#official-nodejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>official Node.js</h4>
+
+<ul>
+<li>  <code>docker pull node</code> - <a href="https://hub.docker.com/_/node/">official Node.js</a>
+</li>
+</ul>
+
+<h4>
+<a id="nodeos" class="anchor" href="#nodeos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NodeOs</h4>
+
+<ul>
+<li>  <code>docker pull nodeos/nodeos</code> - <a href="https://hub.docker.com/r/nodeos/nodeos/">official NodeOS</a>
+</li>
+</ul>
+
+<h4>
+<a id="flat-file-cms-1" class="anchor" href="#flat-file-cms-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flat File CMS</h4>
+
+<ul>
+<li>  <code>docker pull gugu/raneto</code> - <a href="https://hub.docker.com/r/gugu/raneto/">Raneto</a>
+</li>
+</ul>
+
+<h4>
+<a id="blog" class="anchor" href="#blog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blog</h4>
+
+<ul>
+<li>  <code>docker pull ghost</code> - <a href="https://hub.docker.com/_/ghost/">official ghost</a>
+</li>
+</ul>
+
+<h4>
+<a id="nosql" class="anchor" href="#nosql" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NoSQL</h4>
+
+<ul>
+<li>  <code>docker pull mongo</code> - <a href="https://hub.docker.com/_/mongo/">official MongoDB</a>
+</li>
+<li>  <code>docker pull redis</code> - <a href="https://hub.docker.com/_/redis/">official Redis</a>
+</li>
+</ul>
+
+<h3>
+<a id="contact--social-media" class="anchor" href="#contact--social-media" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact / Social Media</h3>
+
+<p><em>Get the latest News about Web Development, Open Source, Tooling, Server &amp; Security</em></p>
+
+<p><a href="https://twitter.com/frapsoft/"><img src="https://github.frapsoft.com/social/twitter.png" alt="Twitter"></a><a href="https://www.facebook.com/frapsoft/"><img src="https://github.frapsoft.com/social/facebook.png" alt="Facebook"></a><a href="https://plus.google.com/116540931335841862774"><img src="https://github.frapsoft.com/social/google-plus.png" alt="Google+"></a><a href="https://gitter.im/frapsoft/frapsoft/"><img src="https://github.frapsoft.com/social/gitter.png" alt="Gitter"></a><a href="https://github.com/ellerbrock/"><img src="https://github.frapsoft.com/social/github.png" alt="Github"></a></p>
+
+<h3>
+<a id="development-by" class="anchor" href="#development-by" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development by</h3>
+
+<p>Developer / Author: <a href="https://github.com/ellerbrock/">Maik Ellerbrock</a><br>
+Company: <a href="https://github.com/frapsoft/">Frapsoft</a></p>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
+
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br></p>
+
+<p>This work by <a href="https://github.com/ellerbrock/">Maik Ellerbrock</a> is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ellerbrock/nodejs-for-webdeveloper">Node.js Tutorial for Web Developers</a> is maintained by <a href="https://github.com/ellerbrock">ellerbrock</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
